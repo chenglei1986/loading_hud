@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/widgets.dart';
 import 'dart:math' as Math;
 
-class FlutterProgressHud {
+class LoadingHud {
   final BuildContext context;
   final bool cancelable;
   final bool canceledOnTouchOutside;
@@ -10,7 +10,7 @@ class FlutterProgressHud {
   final Color hudColor;
   final Color indicatorColor;
 
-  FlutterProgressHud(this.context, {
+  LoadingHud(this.context, {
     this.cancelable,
     this.canceledOnTouchOutside = true,
     this.dimBackground = true,
@@ -67,7 +67,7 @@ class _HudContentState extends State<_HudContent> {
         width: 120,
         height: 120,
         alignment: Alignment.center,
-        child: ProgressIndicator(widget.indicatorColor),
+        child: LoadingIndicator(widget.indicatorColor),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(
             Radius.circular(12),
@@ -79,22 +79,22 @@ class _HudContentState extends State<_HudContent> {
   }
 }
 
-class ProgressIndicator extends StatefulWidget {
+class LoadingIndicator extends StatefulWidget {
   final Paint p;
   final Color color;
   final leavesCount = 12;
   final leaveColors = <Color>[];
   final Path path = Path();
 
-  ProgressIndicator(this.color,) : p = Paint()
+  LoadingIndicator(this.color,) : p = Paint()
     ..isAntiAlias = true
     ..style = PaintingStyle.fill;
 
   @override
-  _ProgressIndicatorState createState() => _ProgressIndicatorState();
+  _LoadingIndicatorState createState() => _LoadingIndicatorState();
 }
 
-class _ProgressIndicatorState extends State<ProgressIndicator> {
+class _LoadingIndicatorState extends State<LoadingIndicator> {
   Timer timer;
   double rotateDegree = 0;
 

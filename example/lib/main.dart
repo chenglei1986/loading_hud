@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_progress_hud/flutter_progress_hud.dart';
+import 'package:loading_hud/loading_hud.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter ProgressHUD',
+      title: 'LoadingHUD',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -21,7 +21,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter ProgressHUD'),
+        title: Text('LoadingHUD'),
       ),
       body: ListView(
         children: <Widget>[
@@ -56,8 +56,8 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
-  FlutterProgressHud _buildDefaultHud(BuildContext context) {
-    return FlutterProgressHud(
+  LoadingHud _buildDefaultHud(BuildContext context) {
+    return LoadingHud(
       context,
       cancelable: true,
       canceledOnTouchOutside: true,
@@ -67,8 +67,8 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
-  FlutterProgressHud _buildUnCancelableHud(BuildContext context) {
-    return FlutterProgressHud(
+  LoadingHud _buildUnCancelableHud(BuildContext context) {
+    return LoadingHud(
       context,
       cancelable: false,
       canceledOnTouchOutside: false,
@@ -78,8 +78,8 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
-  FlutterProgressHud _buildNoDimBackgroundHud(BuildContext context) {
-    return FlutterProgressHud(
+  LoadingHud _buildNoDimBackgroundHud(BuildContext context) {
+    return LoadingHud(
       context,
       cancelable: true,
       canceledOnTouchOutside: true,

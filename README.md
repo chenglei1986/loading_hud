@@ -1,8 +1,8 @@
-# FlutterProgressHUD
+# LoadingHud
 
-ProgressHUD for Flutter.
+A dialog with a loading indicator.
 
-![showcase](screenshots/May-07-2020_16-50-55.gif)
+![showcase](screenshots/screen_shot.gif)
 
 ## Getting Started
 
@@ -10,13 +10,13 @@ ProgressHUD for Flutter.
 
 ```yaml
 dependencies:
-  flutter_progress_hud: ^0.1.0
+  loading_hud: ^0.1.0
 ```
 
 ### Examples
 
 ```dart
-var progressHud = FlutterProgressHud(
+var loadingHud = LoadingHud(
   context,
   cancelable: true,                  // Cancelable when pressing Android back key
   canceledOnTouchOutside: true,      // Cancelable when touch outside of the ProgressHud
@@ -25,8 +25,8 @@ var progressHud = FlutterProgressHud(
   indicatorColor: Color(0xFFFFFFFF), // Color of the spinning progress indicator
 );
 /// Show ProgressHud
-progressHud.show();
+loadingHud.show();
 /// Dismiss ProgressHud
-progressHud.dismiss();
+loadingHud.dismiss();
 ```
 

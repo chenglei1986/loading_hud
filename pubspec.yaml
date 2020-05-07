@@ -1,7 +1,7 @@
-name: flutter_progress_hud
-description: ProgressHUD for Flutter.
+name: loading_hud
+description: A dialog with a loading indicator.
 version: 0.1.0
-homepage: https://github.com/chenglei1986/flutter_progress_hud
+homepage: https://github.com/chenglei1986/loading_hud
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
