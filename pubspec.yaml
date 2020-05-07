@@ -1,7 +1,6 @@
 name: flutter_progress_hud
 description: ProgressHUD for Flutter.
 version: 0.1.0
-author: chenglei <chenglei.1986@163.com>
 homepage: https://github.com/chenglei1986/flutter_progress_hud
 
 environment:
