@@ -10,7 +10,7 @@ ProgressHUD for Flutter.
 
 ```yaml
 dependencies:
-  flutter_progress_hud: 0.1.0
+  flutter_progress_hud: ^0.1.0
 ```
 
 ### Examples
