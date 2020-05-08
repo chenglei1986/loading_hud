@@ -24,9 +24,9 @@ var loadingHud = LoadingHud(
   hudColor: Color(0x99000000),       // Color of the ProgressHud
   indicatorColor: Color(0xFFFFFFFF), // Color of the spinning progress indicator
 );
-/// Show ProgressHud
+/// Show LoadingHud
 loadingHud.show();
-/// Dismiss ProgressHud
+/// Dismiss LoadingHud
 loadingHud.dismiss();
 ```
 
