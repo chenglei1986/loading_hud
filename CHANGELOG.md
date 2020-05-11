@@ -1,5 +1,7 @@
-## [0.1.0] - TODO: Add release date.
+## 0.1.0
 
 - Initial release.
 
-* TODO: Describe initial release.
+## 0.2.0
+
+- Support displaying success and error message when loading is completed.
